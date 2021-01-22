@@ -74,6 +74,8 @@ namespace BlackDotTest.Pages
             {
                 SearchEngine(se, searchTerm);
             }
+            //remove results with 0 mentioned, most probably just noise from engines
+            Results.RemoveAll(x => x.MentionedTimesTotal == 0);
             Results = Results.OrderByDescending(x => x.MentionedTimesTotal).
                 ThenByDescending(x => x.MentionedInLinks).ToList();
 
