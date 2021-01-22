@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Please enter the search term below</p>
+    @using (Html.BeginForm())
+    {
+        @Html.TextBox("searchTerm") <br/>
+        <input type="submit" value="Search">
+    }
+        <div>
+            <h4>Results for: @Model.SearchTerm</h4>
+            <hr />
+            <div class="table">
+                <div class="row">
+                    <div class="column">Engine</div>
+                    <div class="column">Page</div>
+                    <div class="column">Mentioned in Links</div>
+                    <div class="column">Total</div>
+                </div>
+                @foreach (var link in Model.Results)
+                {
+                    <div class="row">
+                        <div class="column">@link.SearchEngine</div>
+                        <div class="column"><a href="@link.LinkUrl">@link.LinkUrl</a></div>
+                        <div class="column">@link.MentionedInLinks</div>
+                        <div class="column">@link.MentionedTimesTotal</div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>

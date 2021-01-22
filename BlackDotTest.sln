@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackDotTest", "BlackDotTest\BlackDotTest.csproj", "{134316A0-44DB-4233-8191-D5812FC00CBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bds.TechTest.Tests", "..\TechnicalTest\Tests\Bds.TechTest.Tests\Bds.TechTest.Tests.csproj", "{A5E83124-682E-4102-A4C1-41C593644897}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{134316A0-44DB-4233-8191-D5812FC00CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{134316A0-44DB-4233-8191-D5812FC00CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{134316A0-44DB-4233-8191-D5812FC00CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{134316A0-44DB-4233-8191-D5812FC00CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5E83124-682E-4102-A4C1-41C593644897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E83124-682E-4102-A4C1-41C593644897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E83124-682E-4102-A4C1-41C593644897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E83124-682E-4102-A4C1-41C593644897}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A363967-9C02-4432-8339-8FC825B34D72}
+	EndGlobalSection
+EndGlobal
