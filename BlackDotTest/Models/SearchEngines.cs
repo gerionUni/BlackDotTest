@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* class will store the tructure for search engines with:
+ * name of search engine
+ * url used to search
+ * escape string is for special values before each link like in case of google
+ * node selector is the search selector to find nodes, currently used for links
+ * but can be used for css class in future or different elements of javascript
+ * 21/01/2021 - Gerion
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
